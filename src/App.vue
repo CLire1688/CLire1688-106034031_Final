@@ -1,32 +1,44 @@
-<template>
-  <h1>P5.js on Vue3 Template</h1>
-  <div id="nav">
-    <router-link to="/">Example 1</router-link> |
-    <router-link to="/example2">Example 2</router-link> |
-    <router-link to="/example3">Example 3</router-link>
-  </div>
+<template>  
   <router-view :key="$route.fullPath"/>
+  <!-- <el-button type="primary">我是按鈕</el-button> -->
 </template>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+#text {
+  font-family: Helvetica;
+  font-weight:bold;
 }
 
-#nav {
-  padding: 30px;
+#name {
+  font-size: 50px;
+  margin-block-start: 5px;
+  margin-block-end: 10px;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+  width: 200px;
+  color:rgb(41, 117, 122);
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.button1{
+  padding-top: 0px;
+  padding-left: 10px;
+  border: none;
+  color: white;
+  display: inline-block;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+main {
+  margin: 0;
+  width: 30vw;
 }
+
+body{
+  background-color: rgb(157, 221, 224);
+  margin: 0px; 
+  /* 網頁的底色 */
+}
+
 </style>
